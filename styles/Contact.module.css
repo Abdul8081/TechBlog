@@ -1,0 +1,91 @@
+/* Importing font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+/* Main container for centering the form */
+.ab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Ensures that the container takes at least full height of the viewport */
+  flex-direction: column;  /* Aligns form elements vertically */
+  background-color: #112A46;  /* Light background for the entire page */
+}
+
+/* Form styles */
+.formbackendForm {
+  width: 400px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 24px;
+  background-color: #112A46;  /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for better aesthetics */
+}
+
+/* Form input fields and textareas */
+.formbackendForm input,
+.formbackendForm textarea,
+.formbackendForm select {
+  padding: 12px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+/* Input and textarea placeholder styles */
+.formbackendForm ::placeholder {
+  opacity: 0.8;  /* Slightly faded placeholder text */
+}
+
+/* Labels for form fields */
+.formbackendForm label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Button style */
+.formbackendForm button {
+  padding: 0 26px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formbackendForm button:hover {
+  opacity: 0.9;
+}
+
+/* Specific field styling to separate different form elements */
+.formbackendForm .formbackend-field:not(:first-child) {
+  margin-top: 16px;
+}
+
+/* For the checkbox input */
+.formbackendForm input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+/* For form checkboxes */
+.formbackendForm .form-checkbox {
+  display: flex;
+  align-items: center;
+}

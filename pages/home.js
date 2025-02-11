@@ -1,9 +1,9 @@
 import React from 'react'
-
+import HomePage from './index';
 const home = () => {
   return (
     <div>
-      this is the home page
+      <HomePage/>
     </div>
   )
 }
