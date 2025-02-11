@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/blogdata
+/contactdata
+/public
 /.pnp
 .pnp.*
 .yarn/*
