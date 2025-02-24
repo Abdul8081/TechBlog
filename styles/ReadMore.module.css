@@ -1,0 +1,16 @@
+.button {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    text-decoration: underline;
+  }
+.btn_bottom{
+    margin-bottom: 10px;
+}
+  

@@ -1,0 +1,46 @@
+/* Styles for the Navbar */
+.navbarContainer {
+  position: fixed; /* Keeps navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222; /* Dark background for navbar */
+  padding: 15px 0;
+  z-index: 1000; /* Ensures navbar stays above other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Flexbox for horizontal alignment */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the navigation list */
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Items */
+.navItem {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.navItem:hover {
+  color: #b7b530; /* Highlight color on hover */
+}
+
+/* Prevent page content from going behind the navbar */
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}

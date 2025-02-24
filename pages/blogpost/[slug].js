@@ -80,7 +80,7 @@ export async function getStaticProps(context) {
 
   return {
     props : {myBlog : JSON.parse(myBlog)},
-  }
+  }      
 }
 
 export default Slug;

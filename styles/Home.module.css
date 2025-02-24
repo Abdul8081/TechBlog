@@ -30,9 +30,17 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  margin-top: 50px;
+  gap: 20px;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+}
+.btn {
+  cursor: pointer;
+  background: #1a245a;
+  padding: 5px;
+  margin: 1px;
+  border-radius: 10px;
 }
 
 .main ol {
@@ -43,6 +51,10 @@
   line-height: 24px;
   letter-spacing: -0.01em;
   list-style-position: inside;
+}
+
+.blogContainer {
+  max-width: 50%;
 }
 
 .main li:not(:last-of-type) {
@@ -68,10 +80,7 @@
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -92,12 +101,9 @@ a.secondary {
   min-width: 180px;
 }
 
-.nav {
-  display: flex;
-  gap: 49px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5rem;
+.blogHeading {
+  text-align: left;
+  margin-top: 1rem;
 }
 
 .footer {
@@ -177,9 +183,8 @@ a.secondary {
 }
 
 .image {
-  margin-top: 1rem;
-  width: 237px;
-  height: 158px;
-  border-radius: 8px;
+  width: 125px;
+  height: 125px;
+  border-radius: 110px;
   object-fit: cover;
 }

@@ -1,8 +1,6 @@
 // blog.js (Pages)
 import React, { useState } from "react";
-import styles2 from "@/styles/Blog.module.css";
-import styles from "@/styles/Home.module.css";
-import styles1 from "@/styles/BlogItem.module.css";
+import styles from "@/styles/BlogItem.module.css";
 // import Link from "next/link";
 import * as fs from 'fs';
 import Link from "next/link";
@@ -20,18 +18,18 @@ const Blog = (props) => {
 
   // const [blogs, setBlogs] = useState(props.allBlogs);
   // console.log(props.allBlogs)
-  console.log(props);
+  // console.log(props);
   const[blogs] = useState(props.allBlogs);
   return (
-    <div className={styles2.blogs}>
-      <main className={styles.main}>
+    <div className={styles.blogs}>
+      <main className={styles.blogItem}>
         {blogs.map((blogItem) => (
-          <div className={styles1.blogItem} key={blogItem.slug}>
+          <div className={styles.blogItem} key={blogItem.slug}>
             <Link href={`/blogpost/${blogItem.slug}`}>
               <h3 className={styles.heading}>{blogItem.title}</h3>
             </Link>
             <p className={styles.blogItemp}>
-              {blogItem.content?.substring(0, 240)}...
+              {blogItem.Summary || blogItem.content?.substring(0, 240)}...
             </p>
           </div>
         ))}

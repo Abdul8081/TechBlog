@@ -2,6 +2,7 @@ import Head from "next/head";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Script from "next/script";
+import ReadMore from "./components/ReadMore";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,11 +26,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script></Script>
-      
-      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+
+      <div
+        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
+      >
         <main className={styles.main}>
           <div className={styles.heroSection}>
-            <h1 className={styles.title}>Hunting Coder</h1>
             <img
               className={styles.image}
               src="/images/home.jpg"
@@ -39,24 +41,43 @@ export default function Home() {
             />
           </div>
 
-          <p className={styles.tagline}>A blog for the hunting coder by a hunting coder</p>
-          
+          <h1 className={styles.title}> &lt;Hunting Coder \&gt;</h1>
+
           <div className={styles.blogContainer}>
-            <h2 className={styles.blogHeading}>Latest Blog</h2>
-            
+            <h2 className={styles.blogHeading}>Latest Blogs</h2>
+            <br />
+
             <div className={styles.blogItem}>
-              <h3 className={styles.blogTitle}>Hunting Code</h3>
-              <p className={styles.blogDescription}>A blog for hunting coders by a hunting coder</p>
+              <h3 className={styles.blogTitle}>How to learn Java-Script </h3>
+              <ReadMore
+                text="A blog for hunting coders Atul Kumar and gang Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis quos, sed
+                dignissimos facilis consequatur perspiciatis dolorem dolores
+                quasi, ea tempore repellat, voluptatibus ipsa consectetur et!"
+                maxLength={170}
+              />
             </div>
 
             <div className={styles.blogItem}>
-              <h3 className={styles.blogTitle}>Hunting Code</h3>
-              <p className={styles.blogDescription}>A blog for hunting coders by a hunting coder</p>
+              <h3 className={styles.blogTitle}>How to run React.JS</h3>
+
+              <ReadMore
+                text="Abhisek the coder and Programmar Lorem ipsum dolor sit
+                consectetur, adipisicing elit. and dolores, distinctio voluptate
+                ex non mollitia!Hellp man Magnam dignissimoscanbeinc saepe amet
+                quisquam explicabo quam. do this can be increase also"
+                maxLength={170}
+              />
             </div>
 
             <div className={styles.blogItem}>
-              <h3 className={styles.blogTitle}>Hunting Code</h3>
-              <p className={styles.blogDescription}>A blog for hunting coders by a hunting coder</p>
+              <h3 className={styles.blogTitle}>How to run Next.JS</h3>
+              <ReadMore
+                text="Snehil the topper and the conner Lorem ipsum dolor sit,
+                consectetur adipisicing elit. Recusandae voluptas iure explicabo
+                corporis reiciendis nostrum voluptatem laborum, porro quo eius
+                modi ab asperiores cupiditate a?"
+                maxLength={170}
+              />
             </div>
           </div>
         </main>

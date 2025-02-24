@@ -1,11 +1,10 @@
 .container {
     margin: 40px auto;
-    max-width: 60vw;
+    max-width: 50vw;
     padding: 20px;
-    background-color: #112A46;
+    /* background-color: #112A46; */
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    line-height: 1.8;
+    box-shadow: 0 4px 6px rgba(46, 42, 42, 0.1);
     font-family: Arial, sans-serif;
 }
 
