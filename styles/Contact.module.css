@@ -1,91 +1,80 @@
-/* Importing font from Google */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
-
-/* Main container for centering the form */
-.ab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;  /* Ensures that the container takes at least full height of the viewport */
-  flex-direction: column;  /* Aligns form elements vertically */
-  background-color: #112A46;  /* Light background for the entire page */
-}
-
-/* Form styles */
-.formbackendForm {
-  width: 400px;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333;
-  line-height: 24px;
-  background-color: #112A46;  /* White background for the form */
+.contactFormContainer {
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for better aesthetics */
+  line-height: 1.4;
+  border-radius: 10px;
+  width: 45%;
+  margin: 100px auto;
+  box-shadow: 0 4px 6px #ffffff1a;
+  font-family: Arial, sans-serif;
 }
 
-/* Form input fields and textareas */
-.formbackendForm input,
-.formbackendForm textarea,
-.formbackendForm select {
-  padding: 12px;
-  margin-top: 4px;
-  margin-bottom: 16px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.contactFormContainer h2 {
+  text-align: center;
+}
+
+.contactFormContainer p {
+  text-align: center;
+}
+
+.formbackendForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
   display: block;
-  font-family: "Inter", sans-serif;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 14px;
 }
 
-/* Input and textarea placeholder styles */
-.formbackendForm ::placeholder {
-  opacity: 0.8;  /* Slightly faded placeholder text */
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
-/* Labels for form fields */
-.formbackendForm label {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-
-/* Button style */
-.formbackendForm button {
-  padding: 0 26px;
-  background-color: #000;
-  color: #fff;
+.sendButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #000080;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  height: 40px;
   font-size: 16px;
-  font-weight: 500;
 }
 
-.formbackendForm button:hover {
-  opacity: 0.9;
+.sendButton:hover {
+  background-color: #000060;
 }
 
-/* Specific field styling to separate different form elements */
-.formbackendForm .formbackend-field:not(:first-child) {
-  margin-top: 16px;
+.callUs {
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-/* For the checkbox input */
-.formbackendForm input[type='checkbox'] {
-  width: 15px;
-  height: 15px;
-  margin: 0px;
-  margin-right: 8px;
-  display: inline-block;
-}
-
-/* For form checkboxes */
-.formbackendForm .form-checkbox {
-  display: flex;
-  align-items: center;
+/* Scoping the input selectors */
+.formbackendForm input[type="text"],
+.formbackendForm input[type="email"],
+.formbackendForm input[type="tel"],
+.formbackendForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
