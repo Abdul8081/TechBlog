@@ -78,3 +78,15 @@
   border-radius: 5px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .contactFormContainer {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  .contactFormContainer {
+    width: 80%;
+  }
+}

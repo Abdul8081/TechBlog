@@ -25,8 +25,7 @@ const Footer = () => {
 
   return (
     <footer className={`${styles.footer} ${isVisible ? styles.show : ""}`}>
-      <FaCar className={styles.icon} /> 
-      <span>Made By Abdul Muid !)</span>
+      <span>© Abdul Muid - All Rights Researved 2025</span>
     </footer>
   );
 };

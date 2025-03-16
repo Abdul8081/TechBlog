@@ -43,7 +43,7 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
-        max-width: 85vw;
+        max-width: 58vw;
         padding: 15px;
     }
 
@@ -66,23 +66,23 @@
 
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 90vw;
-        padding: 10px;
+        max-width: 77vw;
+        padding: 16px;
     }
 
     .center {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .heading {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .text {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .list li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }

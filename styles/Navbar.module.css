@@ -44,3 +44,70 @@
 body {
   padding-top: 60px; /* Adjust based on navbar height */
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .navList {
+    gap: 50px; /* Reduce spacing between nav items */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    padding: 7px 14px;
+  }
+  .navList {
+    gap: 30px;
+  }
+  .navItem {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navList {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .navItem {
+    font-size: 10px;
+    padding: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .navbarContainer {
+    position: fixed; /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* Dark background for navbar */
+    padding: 5px 0;
+    z-index: 1000; /* Ensures navbar stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+
+  .nav {
+    flex-direction: row !important; /* Force horizontal layout */
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .navList {
+    flex-direction: row !important; /* Keep nav items in a row */
+    gap: 20px;
+    overflow-x: auto; /* Scroll if items don’t fit */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+}
+@media screen and (max-width:425) {
+  .navItem {
+    font-size: 10px;
+    padding: 7px;
+  }
+}

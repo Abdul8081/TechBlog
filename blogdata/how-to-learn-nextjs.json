@@ -1,0 +1,7 @@
+{
+    "title" : "How to learn the nextjs",
+    "content": "NextJSContentComponet",
+    "Author":"Abdul Muid",
+    "Summary" : "Learn Next.js by understanding its core concepts: Pages, Routing, and Server-side Rendering (SSR). Start with a simple project using npx create-next-app. Explore static (SSG) and dynamic (SSR) rendering, API routes, and middleware. Learn data fetching methods like getServerSideProps and getStaticProps. Use CSS modules, Tailwind CSS, or Styled Components for styling. Optimize performance with image optimization and lazy loading. Deploy easily on Vercel. Build real-world projects like blogs, dashboards, or e-commerce sites to strengthen your skills. 🚀",
+    "slug":"how-to-learn-nextjs"
+}
