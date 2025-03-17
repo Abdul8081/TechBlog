@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Script from "next/script";
 import ReadMore from "./components/ReadMore";
+import Image from "next/image";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,13 +33,13 @@ export default function Home() {
       >
         <main className={styles.main}>
           <div className={styles.heroSection}>
-            <img
-              className={styles.image}
-              src="/images/home.jpg"
-              width={237}
-              height={158}
-              alt="hunting coder"
-            />
+          <Image
+            className={styles.image}
+            src="/images/home.jpg"
+            width={237}
+            height={158}
+            alt="Hunting Coder"
+          />           
           </div>
 
           <h1 className={styles.title}> &lt;Hunting Coder \&gt;</h1>
