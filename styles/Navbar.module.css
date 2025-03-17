@@ -40,15 +40,10 @@
   color: #b7b530; /* Highlight color on hover */
 }
 
-/* Prevent page content from going behind the navbar */
-body {
-  padding-top: 60px; /* Adjust based on navbar height */
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .navList {
-    gap: 50px; /* Reduce spacing between nav items */
+    gap: 50px;
   }
 }
 
@@ -77,35 +72,27 @@ body {
   }
 }
 
-
-
 @media screen and (max-width: 320px) {
   .navbarContainer {
-    position: fixed; /* Keeps navbar fixed at the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222; /* Dark background for navbar */
     padding: 5px 0;
-    z-index: 1000; /* Ensures navbar stays above other elements */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   }
 
   .nav {
-    flex-direction: row !important; /* Force horizontal layout */
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 
   .navList {
-    flex-direction: row !important; /* Keep nav items in a row */
+    flex-direction: row;
     gap: 20px;
-    overflow-x: auto; /* Scroll if items don’t fit */
-    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
-@media screen and (max-width:425) {
+
+@media screen and (max-width: 425px) {
   .navItem {
     font-size: 10px;
     padding: 7px;

@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import fs from "fs/promises"; // ✅ Use import instead of require
 import styles from "../../styles/Home.module.css";
-// import parse from "html-react-parser";
 
 // Default fallback component
 const DefaultContent = () => <div>Content Not Available</div>;
@@ -14,8 +14,6 @@ const componentImports = {
 };
 
 const Slug = (props) => {
-  // const [blog, setBlog] = useState(props.myBlog);
-
   const blog = props.myBlog;
 
   useEffect(() => {
@@ -41,39 +39,41 @@ const Slug = (props) => {
 
 // DYNAMIC PATH GENERATION
 export async function getStaticPaths() {
-  const fs = require("fs"); // Import fs inside the function
-  const blogFiles = await fs.promises.readdir("blogdata"); // Read all blog files
+  try {
+    const blogFiles = await fs.readdir("blogdata"); // ✅ Removed require and used fs/promises
 
-  const paths = blogFiles.map((file) => ({
-    params: {
-      slug: file.replace(".json", ""),
-    },
-  }));
+    const paths = blogFiles.map((file) => ({
+      params: {
+        slug: file.replace(".json", ""),
+      },
+    }));
 
-  return {
-    paths,
-    fallback: "blocking",
-  };
+    return {
+      paths,
+      fallback: "blocking",
+    };
+  } catch (error) {
+    console.error("Error reading blog data:", error);
+    return { paths: [], fallback: "blocking" };
+  }
 }
 
 // FETCH BLOG DATA DYNAMICALLY
 export async function getStaticProps(context) {
-  const fs = require("fs"); // Import fs inside the function
   const { slug } = context.params;
-  let myBlog;
 
   try {
-    myBlog = await fs.promises.readFile(`blogdata/${slug}.json`, "utf-8");
-    myBlog = JSON.parse(myBlog);
+    const blogContent = await fs.readFile(`blogdata/${slug}.json`, "utf-8"); // ✅ Used fs.promises
+    const myBlog = JSON.parse(blogContent);
     console.log(`Fetched blog data for ${slug}:`, myBlog); // Debug log
+
+    return {
+      props: { myBlog: { ...myBlog, slug } },
+    };
   } catch (error) {
     console.error("Error fetching blog data:", error);
     return { notFound: true }; // Return 404 if file is missing
   }
-
-  return {
-    props: { myBlog: { ...myBlog, slug } },
-  };
 }
 
 export default Slug;
