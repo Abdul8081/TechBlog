@@ -1,5 +1,3 @@
-import { readFile } from "fs";
-import { maxHeaderSize } from "http";
 import { useState } from "react";
 import styles from "@/styles/ReadMore.module.css";
 const ReadMore = ({text, maxLength}:{text:string;maxLength:number}) => {

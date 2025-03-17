@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "@/styles/Footer.module.css"; // Importing CSS
-import { FaCar } from "react-icons/fa"; // Importing an icon
+import styles from "@/styles/Footer.module.css"; 
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);

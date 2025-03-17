@@ -18,7 +18,7 @@ const About = () => {
         <p className={styles.text}>
           Explicitly, I don&apos;t offer any services yet. I am looking for professionals and funders to collaborate with me. I have a project plan that will bring high profits for them and allow me to gain experience.
         </p>
-        <p className={styles.text}>However, I offer services like:</p>
+        <p className={styles.text}>However, I can performs services like:</p>
         <ul className={styles.list}>
           <li>Website building</li>
           <li>Website monitoring</li>
@@ -32,7 +32,7 @@ const About = () => {
       <section>
         <h2 className={styles.heading}>Contact Us</h2>
         <p className={styles.text}>
-          You can contact me by filling out the form on the Contact Us page. I look forward to hearing from you!
+          Email : amuid677@gmail.com || Linkedin : <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B03gBhumvQeivIyFYNFEWsQ%3D%3D">linkedin.com/in/abdul-muid-00973b264</a>
         </p>
       </section>
     </div>

@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import styles from "../../styles/Home.module.css";
-import parse from "html-react-parser";
+// import parse from "html-react-parser";
 
 // Default fallback component
 const DefaultContent = () => <div>Content Not Available</div>;
@@ -14,7 +14,9 @@ const componentImports = {
 };
 
 const Slug = (props) => {
-  const [blog, setBlog] = useState(props.myBlog);
+  // const [blog, setBlog] = useState(props.myBlog);
+
+  const blog = props.myBlog;
 
   useEffect(() => {
     console.log("Blog Data:", blog);
@@ -32,8 +34,6 @@ const Slug = (props) => {
 
   return (
     <main className={styles.main}>
-      {/* <h1>{blog.title}</h1> */}
-      {/* <hr /> */}
       <BlogComponent />
     </main>
   );

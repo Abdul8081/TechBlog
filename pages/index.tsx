@@ -61,10 +61,7 @@ export default function Home() {
               <h3 className={styles.blogTitle}>How to run React.JS</h3>
 
               <ReadMore
-                text="Abhisek the coder and Programmar Lorem ipsum dolor sit
-                consectetur, adipisicing elit. and dolores, distinctio voluptate
-                ex non mollitia!Hellp man Magnam dignissimoscanbeinc saepe amet
-                quisquam explicabo quam. do this can be increase also"
+                text="hello this is the blog for the how to run the react js and In this you are going to run explore more and more things which are related to the react js and you will find some meaningfull insight here related to the react js and this is gonna things related to the web and score"
                 maxLength={170}
               />
             </div>
@@ -72,9 +69,10 @@ export default function Home() {
             <div className={styles.blogItem}>
               <h3 className={styles.blogTitle}>How to run Next.JS</h3>
               <ReadMore
-                text="Snehil the topper and the conner Lorem ipsum dolor sit,
-                accenttothe yes this is the things not elit. Reluct vol iure explicabo not this key key volta int, porro quo eius
-                modi ab ji abhi a?"
+                text="Namancrs the human and Enterprens Lorem ipsum dolor sit
+                consectetur, adipisicing elit. and dolores, distinctio voluptate
+                ex non mollitia!Hellp man Magnam dignissimoscanbeinc saepe amet
+                quisquam explicabo quam. do this can be increase also"
                 maxLength={170}
               />
             </div>

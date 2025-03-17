@@ -157,8 +157,8 @@ const Contact = () => {
 
   return (
     <div className={styles.contactFormContainer}>
-      <h2>Contact Us</h2>
-      <p>I'll get back soon!) </p>
+      <h2 className={styles.heading}>Contact Us</h2>
+      <p className={styles.headingP}>I&apos;ll get back soon!) </p>
       <form method="POST" className={styles.formbackendForm} onSubmit={submitHandler}>
         <div className={styles.formGroup}>
           <label htmlFor="name">Your Name</label>

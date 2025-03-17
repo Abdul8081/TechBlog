@@ -90,3 +90,15 @@
     width: 80%;
   }
 }
+
+@media screen and (max-width:320px) {
+  .heading{
+    font-size: 1rem;
+  }
+  .headingP{
+    font-size: 0.9rem;
+  }
+  .formGroup {
+    font-size: 0.8rem;
+  }
+}
