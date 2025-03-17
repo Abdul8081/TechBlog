@@ -16,7 +16,7 @@ const About = () => {
       <section>
         <h2 className={styles.heading}>Services Offered</h2>
         <p className={styles.text}>
-          Explicitly, I don't offer any services yet. I am looking for professionals and funders to collaborate with me. I have a project plan that will bring high profits for them and allow me to gain experience.
+          Explicitly, I don&apos;t offer any services yet. I am looking for professionals and funders to collaborate with me. I have a project plan that will bring high profits for them and allow me to gain experience.
         </p>
         <p className={styles.text}>However, I offer services like:</p>
         <ul className={styles.list}>

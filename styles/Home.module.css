@@ -234,5 +234,8 @@ a.secondary {
   .blogContainer{
     max-width: 237px;
   }
+  .blogTitle {
+    font-size: 1.1rem;
+  }
 }
 

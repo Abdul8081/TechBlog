@@ -54,3 +54,12 @@
         font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .heading {
+        font-size: 1.1rem;
+    }
+    .blogItemp {
+        font-size: 0.6rem;
+    }
+}

@@ -73,9 +73,8 @@ export default function Home() {
               <h3 className={styles.blogTitle}>How to run Next.JS</h3>
               <ReadMore
                 text="Snehil the topper and the conner Lorem ipsum dolor sit,
-                consectetur adipisicing elit. Recusandae voluptas iure explicabo
-                corporis reiciendis nostrum voluptatem laborum, porro quo eius
-                modi ab asperiores cupiditate a?"
+                accenttothe yes this is the things not elit. Reluct vol iure explicabo not this key key volta int, porro quo eius
+                modi ab ji abhi a?"
                 maxLength={170}
               />
             </div>

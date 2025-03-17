@@ -1,6 +1,9 @@
-import { error } from "console";
+import { NextApiRequest,NextApiResponse } from "next";
 import * as fs from "fs";
-export default async function handler(req,res) {
+export default async function handler(
+    req : NextApiRequest,
+    res : NextApiResponse 
+) {
     if(req.method == 'POST'){
         
         const data = req.body; // extract the request body
