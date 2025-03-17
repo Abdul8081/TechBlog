@@ -5,7 +5,6 @@ import styles from "@/styles/BlogItem.module.css";
 import * as fs from 'fs';
 import Link from "next/link";
 
-
 const Blog = (props) => {
   //this was the conditional rendering with the help of the javascirpt 
   // const [blogs, setBlogs] = useState([]);
